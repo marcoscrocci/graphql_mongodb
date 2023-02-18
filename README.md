@@ -39,9 +39,18 @@ query Query {
 ## Instalar o Nodemon para a aplicação reiniciar automaticamente a cada alteração
 yarn add nodemon -D
 
-### Observação:
+### Observações:
 - Adicionar atributo scripts no package.json
 - Executar o serviço com o comando:
 
 yarn dev
+
+## Instalar o Babel
+yarn add @babel/core @babel/cli @babel/preset-env @babel/node -D
+
+### Observação:
+- Criar o arquivo .babelrc
+
+## Instalar o mongoose
+yarn add mongoose
 
