@@ -54,3 +54,10 @@ yarn add @babel/core @babel/cli @babel/preset-env @babel/node -D
 ## Instalar o mongoose
 yarn add mongoose
 
+## Instalar o Merge GraphQL Schema
+yarn add merge-graphql-schemas
+
+Está ocorrendo erro no momento do vídeo:
+
+https://youtu.be/fktvJawkGdQ?list=PLPXWI3llyMiK9uw7tfljM2hnQl2qu6CeT&t=516
+
