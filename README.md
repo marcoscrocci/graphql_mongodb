@@ -36,3 +36,12 @@ query Query {
   }
 }
 
+## Instalar o Nodemon para a aplicação reiniciar automaticamente a cada alteração
+yarn add nodemon -D
+
+### Observação:
+- Adicionar atributo scripts no package.json
+- Executar o serviço com o comando:
+
+yarn dev
+
