@@ -1,16 +1,16 @@
-import User from '../../../models/User';
+import api from './api';
 
 export default {
     User: {
         fullName: (user) => `${user.firstName} ${user.lastName}`
     },
     Query: {
-        users: async () => await User.find(),
-        user: async (_, { id }) => await User.findById(id)
+        users: () => api.getUsers(),
+        user: (_, { id }) => api.getUser(id)
     },
     Mutation: {
-        createUser: async (_, { data }) => await User.create(data),
-        updateUser: async (_, { id, data }) => await User.findByIdAndUpdate(id, data, { new: true}), // new para retornar os dados atualizados
-        deleteUser: async (_, { id }) => !!(await User.findByIdAndDelete(id))
+        createUser: (_, { data }) => api.createUser(data),
+        updateUser: (_, { id, data }) => api.updateUser(id, data),
+        deleteUser: (_, { id }) => api.deleteUser(id)
     }
 };
